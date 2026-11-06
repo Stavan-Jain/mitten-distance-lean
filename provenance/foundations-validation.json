@@ -1,0 +1,55 @@
+{
+  "qeclean_revision": "b5a9f13d17b656091bf95024be8ebaf457d2c3a6",
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "axiom_audit": {
+    "declarations": 6691,
+    "modules": 197
+  },
+  "checks": [
+    {
+      "check": "full-build",
+      "returncode": 0,
+      "seconds": 35.13
+    },
+    {
+      "check": "light-build",
+      "returncode": 0,
+      "seconds": 17.34
+    },
+    {
+      "check": "blueprint-build",
+      "returncode": 0,
+      "seconds": 6.75
+    },
+    {
+      "check": "widgets-build",
+      "returncode": 0,
+      "seconds": 2.79
+    },
+    {
+      "check": "playground",
+      "returncode": 0,
+      "seconds": 2.74
+    },
+    {
+      "check": "bb-regressions",
+      "returncode": 0,
+      "seconds": 2.96
+    },
+    {
+      "check": "axioms",
+      "returncode": 0,
+      "seconds": 2.79
+    },
+    {
+      "check": "umbrellas",
+      "returncode": 0,
+      "seconds": 0.76
+    }
+  ],
+  "measurement_note": "Incremental checks after extracting the concrete case study; not a cold-build timing."
+}

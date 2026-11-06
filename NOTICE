@@ -1,0 +1,16 @@
+mitten-distance-lean
+Copyright 2026 Stavan Jain
+
+Extracted from Stavan-Jain/QECLean at
+8a4566ea8e6d7b43d7722a98e772455d9870ca8d and Stavan-Jain/qec-lab at
+0757e9dfe2eaabe4e71220fa8c41cb01a65af9e7.
+
+The extraction relocates Lean modules and updates their imports. Mathematical
+declaration namespaces and proof bodies are preserved. Generator entry points,
+module mappings, validation tooling, and repository documentation are adapted
+to the standalone repository. See provenance/module-migration.json and
+scripts/mitten/README.md.
+
+Reusable lifted-product and packed-certificate foundations are supplied by the
+pinned QECLean dependency. Their earlier packed-arithmetic provenance includes
+the Bravyi360 development at QECLean commit 4d5ac9e.

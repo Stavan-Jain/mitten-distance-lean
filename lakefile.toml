@@ -1,0 +1,20 @@
+name = "MittenDistance"
+version = "0.1.0"
+keywords = ["math", "quantum-error-correction"]
+defaultTargets = ["MittenDistance"]
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+relaxedAutoImplicit = false
+weak.linter.mathlibStandardSet = true
+maxSynthPendingDepth = 3
+
+# Keep this exact revision in sync with lake-manifest.json.
+[[require]]
+name = "QEC"
+git = "https://github.com/Stavan-Jain/QECLean"
+rev = "b5a9f13d17b656091bf95024be8ebaf457d2c3a6"
+
+[[lean_lib]]
+name = "MittenDistance"

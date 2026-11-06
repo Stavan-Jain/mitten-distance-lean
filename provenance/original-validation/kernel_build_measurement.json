@@ -1,0 +1,818 @@
+{
+  "date": "2026-11-06",
+  "lean_toolchain": "leanprover/lean4:v4.30.0-rc2",
+  "qeclean_branch": "codex/mitten-kernel",
+  "baseline_revision": "162bfdc",
+  "lean_processes": 1,
+  "threads_per_process": 1,
+  "lean_allocation_guard_mb": 4608,
+  "measurement_method": "Removed only port .olean/.ilean artifacts; reused dependency and existing-library caches; ran bounded full lake build. Timeout after every added module completed; continued remaining existing imports.",
+  "added_modules": 76,
+  "added_module_lean_seconds": 479.649,
+  "five_minute_target_met": false,
+  "ten_minute_added_module_fallback_met": true,
+  "whole_repository_uninterrupted_under_600_seconds_verified": false,
+  "axiom_audit": {
+    "declarations": 17494,
+    "modules": 272,
+    "allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "cold_attempt": {
+    "check": "full-build",
+    "returncode": 124,
+    "wall_seconds": 600.07,
+    "peak_rss_bytes": 4799168512,
+    "port_lean_seconds": 479.649,
+    "modules": [
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorCore.lean",
+        "seconds": 5.34,
+        "peak_rss_bytes": 1839054848,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/Certificate/PackedDigits.lean",
+        "seconds": 3.368,
+        "peak_rss_bytes": 1866366976,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskEnumeration.lean",
+        "seconds": 1.002,
+        "peak_rss_bytes": 1733525504,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/SweepAdapters.lean",
+        "seconds": 1.375,
+        "peak_rss_bytes": 1740914688,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorData.lean",
+        "seconds": 7.538,
+        "peak_rss_bytes": 2131771392,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/Certificate/MaskLinear.lean",
+        "seconds": 1.997,
+        "peak_rss_bytes": 1955315712,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/Certificate/OrbitPackedExtra.lean",
+        "seconds": 1.403,
+        "peak_rss_bytes": 1800339456,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/GroupedJoin.lean",
+        "seconds": 1.04,
+        "peak_rss_bytes": 1736736768,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight4.lean",
+        "seconds": 22.36,
+        "peak_rss_bytes": 2685353984,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight3.lean",
+        "seconds": 10.815,
+        "peak_rss_bytes": 2126921728,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight2.lean",
+        "seconds": 1.655,
+        "peak_rss_bytes": 1798062080,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight1.lean",
+        "seconds": 0.999,
+        "peak_rss_bytes": 1727414272,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight0.lean",
+        "seconds": 1.026,
+        "peak_rss_bytes": 1724137472,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/Certificate/PackedLaneShifts.lean",
+        "seconds": 1.482,
+        "peak_rss_bytes": 1798537216,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/Certificate/BatchLinear.lean",
+        "seconds": 1.962,
+        "peak_rss_bytes": 1978810368,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/JoinZ.lean",
+        "seconds": 11.48,
+        "peak_rss_bytes": 2767503360,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/JoinX.lean",
+        "seconds": 11.239,
+        "peak_rss_bytes": 2730328064,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks.lean",
+        "seconds": 0.961,
+        "peak_rss_bytes": 1709326336,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/Certificate/PackedPopcount.lean",
+        "seconds": 1.737,
+        "peak_rss_bytes": 1828175872,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/Certificate/PackedEquality.lean",
+        "seconds": 1.217,
+        "peak_rss_bytes": 1798193152,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/Certificate/PackedListCertificate.lean",
+        "seconds": 1.56,
+        "peak_rss_bytes": 1970585600,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/Certificate/PackedPopcount32.lean",
+        "seconds": 1.099,
+        "peak_rss_bytes": 1802584064,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/Certificate/PackedGrid.lean",
+        "seconds": 1.016,
+        "peak_rss_bytes": 1789640704,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/PackedSweep.lean",
+        "seconds": 1.179,
+        "peak_rss_bytes": 1979039744,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/Certificate.lean",
+        "seconds": 0.978,
+        "peak_rss_bytes": 1942880256,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/PackedClassification.lean",
+        "seconds": 1.142,
+        "peak_rss_bytes": 1981071360,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/CensusTables.lean",
+        "seconds": 10.55,
+        "peak_rss_bytes": 2414968832,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/SweepMaps.lean",
+        "seconds": 4.164,
+        "peak_rss_bytes": 2097872896,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/PackedGridSweep.lean",
+        "seconds": 1.383,
+        "peak_rss_bytes": 1988165632,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part5.lean",
+        "seconds": 13.564,
+        "peak_rss_bytes": 3528048640,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part4.lean",
+        "seconds": 21.378,
+        "peak_rss_bytes": 3975249920,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part3.lean",
+        "seconds": 13.401,
+        "peak_rss_bytes": 2671034368,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part2.lean",
+        "seconds": 4.451,
+        "peak_rss_bytes": 2604318720,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part1.lean",
+        "seconds": 3.835,
+        "peak_rss_bytes": 2209644544,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part0.lean",
+        "seconds": 2.407,
+        "peak_rss_bytes": 2061156352,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part5.lean",
+        "seconds": 14.177,
+        "peak_rss_bytes": 3597926400,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part4.lean",
+        "seconds": 27.101,
+        "peak_rss_bytes": 3898310656,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part3.lean",
+        "seconds": 17.978,
+        "peak_rss_bytes": 2562195456,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part2.lean",
+        "seconds": 4.985,
+        "peak_rss_bytes": 2619965440,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part1.lean",
+        "seconds": 4.986,
+        "peak_rss_bytes": 2235498496,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part0.lean",
+        "seconds": 3.474,
+        "peak_rss_bytes": 2083815424,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part5.lean",
+        "seconds": 28.858,
+        "peak_rss_bytes": 3674603520,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part4.lean",
+        "seconds": 20.9,
+        "peak_rss_bytes": 4043669504,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part3.lean",
+        "seconds": 12.653,
+        "peak_rss_bytes": 2621407232,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part2.lean",
+        "seconds": 5.741,
+        "peak_rss_bytes": 2627321856,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part1.lean",
+        "seconds": 4.351,
+        "peak_rss_bytes": 2242592768,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part0.lean",
+        "seconds": 2.573,
+        "peak_rss_bytes": 2067513344,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part5.lean",
+        "seconds": 28.425,
+        "peak_rss_bytes": 3637280768,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part4.lean",
+        "seconds": 19.29,
+        "peak_rss_bytes": 3826827264,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part3.lean",
+        "seconds": 10.569,
+        "peak_rss_bytes": 2465218560,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part2.lean",
+        "seconds": 5.916,
+        "peak_rss_bytes": 2603220992,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part1.lean",
+        "seconds": 4.334,
+        "peak_rss_bytes": 2224095232,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part0.lean",
+        "seconds": 2.712,
+        "peak_rss_bytes": 2067005440,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierZ1.lean",
+        "seconds": 1.134,
+        "peak_rss_bytes": 2019885056,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierZ0.lean",
+        "seconds": 1.125,
+        "peak_rss_bytes": 2020409344,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierX1.lean",
+        "seconds": 1.12,
+        "peak_rss_bytes": 2020933632,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierX0.lean",
+        "seconds": 1.123,
+        "peak_rss_bytes": 2020130816,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts.lean",
+        "seconds": 1.029,
+        "peak_rss_bytes": 2015019008,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorSweepZ.lean",
+        "seconds": 1.039,
+        "peak_rss_bytes": 2007121920,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorSweepX.lean",
+        "seconds": 1.041,
+        "peak_rss_bytes": 2007826432,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological/LiftedProduct.lean",
+        "seconds": 9.364,
+        "peak_rss_bytes": 3313057792,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/Data.lean",
+        "seconds": 2.213,
+        "peak_rss_bytes": 3260661760,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/Defs.lean",
+        "seconds": 1.759,
+        "peak_rss_bytes": 3292921856,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/Sparse.lean",
+        "seconds": 3.03,
+        "peak_rss_bytes": 3415375872,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorBridge.lean",
+        "seconds": 2.37,
+        "peak_rss_bytes": 3334979584,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/SparseSupport.lean",
+        "seconds": 1.806,
+        "peak_rss_bytes": 3295969280,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/StabilizerCode.lean",
+        "seconds": 6.633,
+        "peak_rss_bytes": 3968729088,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorChecksX.lean",
+        "seconds": 13.0,
+        "peak_rss_bytes": 4208967680,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorChecksZ.lean",
+        "seconds": 13.152,
+        "peak_rss_bytes": 4389388288,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/Witness.lean",
+        "seconds": 2.406,
+        "peak_rss_bytes": 3537092608,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/Logicals.lean",
+        "seconds": 14.455,
+        "peak_rss_bytes": 4799168512,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorZSide.lean",
+        "seconds": 2.752,
+        "peak_rss_bytes": 3353149440,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorXSide.lean",
+        "seconds": 2.728,
+        "peak_rss_bytes": 3353116672,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150/Distance.lean",
+        "seconds": 2.045,
+        "peak_rss_bytes": 3342139392,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework/Homological.lean",
+        "seconds": 1.654,
+        "peak_rss_bytes": 3233988608,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten/M150.lean",
+        "seconds": 1.604,
+        "peak_rss_bytes": 3264610304,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Framework.lean",
+        "seconds": 1.651,
+        "peak_rss_bytes": 3240017920,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/RotatedSurface/ChainComplex.lean",
+        "seconds": 2.262,
+        "peak_rss_bytes": 3322232832,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Toric/ChainComplex.lean",
+        "seconds": 2.088,
+        "peak_rss_bytes": 3315400704,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Mitten.lean",
+        "seconds": 1.595,
+        "peak_rss_bytes": 3264626688,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/RotatedSurface/H1Dimension.lean",
+        "seconds": 10.35,
+        "peak_rss_bytes": 3438477312,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Toric/LogicalCorrespondenceX.lean",
+        "seconds": 12.146,
+        "peak_rss_bytes": 4362043392,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Toric/LogicalCorrespondenceZ.lean",
+        "seconds": 6.486,
+        "peak_rss_bytes": 3386589184,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/RotatedSurface/N.lean",
+        "seconds": 1.95,
+        "peak_rss_bytes": 3316383744,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Toric/DistanceX.lean",
+        "seconds": 8.699,
+        "peak_rss_bytes": 3370926080,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Toric/DualWrappingInvariants.lean",
+        "seconds": 12.796,
+        "peak_rss_bytes": 4227252224,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/RotatedSurface/StabilizerCode.lean",
+        "seconds": 4.549,
+        "peak_rss_bytes": 3398402048,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Toric/DistanceZ.lean",
+        "seconds": 7.534,
+        "peak_rss_bytes": 3367501824,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/RotatedSurface/DistanceX.lean",
+        "seconds": 2.937,
+        "peak_rss_bytes": 3346300928,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Toric/StabilizerCode.lean",
+        "seconds": 6.295,
+        "peak_rss_bytes": 3418210304,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/RotatedSurface/DistanceZ.lean",
+        "seconds": 4.639,
+        "peak_rss_bytes": 3366060032,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Toric/Distance.lean",
+        "seconds": 1.893,
+        "peak_rss_bytes": 3321954304,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Toric/RankCertificate.lean",
+        "seconds": 7.852,
+        "peak_rss_bytes": 3950706688,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Toric/HomologicalToCode.lean",
+        "seconds": 1.682,
+        "peak_rss_bytes": 3303325696,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/RotatedSurface/Distance.lean",
+        "seconds": 1.727,
+        "peak_rss_bytes": 3312091136,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/Toric.lean",
+        "seconds": 1.57,
+        "peak_rss_bytes": 3242065920,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes/RotatedSurface.lean",
+        "seconds": 1.574,
+        "peak_rss_bytes": 3239575552,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Codes.lean",
+        "seconds": 1.83,
+        "peak_rss_bytes": 3302653952,
+        "returncode": 0
+      },
+      {
+        "source": "QEC/Stabilizer/Stabilizer.lean",
+        "seconds": 5.254,
+        "peak_rss_bytes": 3266068480,
+        "returncode": 0
+      }
+    ]
+  },
+  "completed_checks": [
+    {
+      "check": "full-build",
+      "returncode": 0,
+      "wall_seconds": 21.93,
+      "peak_rss_bytes": 3299180544,
+      "port_lean_seconds": 0,
+      "modules": [
+        {
+          "source": "QEC.lean",
+          "seconds": 16.046,
+          "peak_rss_bytes": 3299180544,
+          "returncode": 0
+        }
+      ]
+    },
+    {
+      "check": "light-build",
+      "returncode": 0,
+      "wall_seconds": 6.25,
+      "peak_rss_bytes": 3264266240,
+      "port_lean_seconds": 0,
+      "modules": [
+        {
+          "source": "QECLight.lean",
+          "seconds": 1.68,
+          "peak_rss_bytes": 3264266240,
+          "returncode": 0
+        }
+      ]
+    },
+    {
+      "check": "blueprint-build",
+      "returncode": 0,
+      "wall_seconds": 4.36,
+      "peak_rss_bytes": 3317366784,
+      "port_lean_seconds": 0,
+      "modules": [
+        {
+          "source": "QECBlueprint.lean",
+          "seconds": 1.786,
+          "peak_rss_bytes": 3317366784,
+          "returncode": 0
+        }
+      ]
+    },
+    {
+      "check": "widgets-build",
+      "returncode": 0,
+      "wall_seconds": 9.63,
+      "peak_rss_bytes": 3322822656,
+      "port_lean_seconds": 0,
+      "modules": [
+        {
+          "source": "QECWidgets/ToricLattice.lean",
+          "seconds": 2.746,
+          "peak_rss_bytes": 3322822656,
+          "returncode": 0
+        },
+        {
+          "source": "QECWidgets/Demo.lean",
+          "seconds": 2.953,
+          "peak_rss_bytes": 3305062400,
+          "returncode": 0
+        },
+        {
+          "source": "QECWidgets.lean",
+          "seconds": 1.664,
+          "peak_rss_bytes": 3225075712,
+          "returncode": 0
+        }
+      ]
+    },
+    {
+      "check": "playground",
+      "returncode": 0,
+      "wall_seconds": 2.73,
+      "peak_rss_bytes": 3251470336,
+      "port_lean_seconds": 0,
+      "modules": [
+        {
+          "source": "Playground.lean",
+          "seconds": 1.689,
+          "peak_rss_bytes": 3251470336,
+          "returncode": 0
+        }
+      ]
+    },
+    {
+      "check": "axioms",
+      "returncode": 0,
+      "wall_seconds": 2.9,
+      "peak_rss_bytes": 3314319360,
+      "port_lean_seconds": 0,
+      "modules": [
+        {
+          "source": "scripts/AxiomCheck.lean",
+          "seconds": 1.858,
+          "peak_rss_bytes": 3314319360,
+          "returncode": 0
+        }
+      ]
+    },
+    {
+      "check": "umbrellas",
+      "returncode": 0,
+      "wall_seconds": 0.98,
+      "peak_rss_bytes": 0,
+      "port_lean_seconds": 0,
+      "modules": []
+    }
+  ],
+  "lean_source_sha256": {
+    "QEC/Stabilizer/Codes/Mitten/M150/CensusTables.lean": "535fde68d763ae0d53496dd5f7330d9b95e972f8546ac0ce3ce50d5910deb93b",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part0.lean": "613a67d664338ba6ba04ed15f8db658dcec296e3472516507af39c3da29ad7c4",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part1.lean": "8c1f81d84c41752342a0fa96c1f82821225240be264ef66b796d2d4168885f75",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part2.lean": "b542c6a0764c4140e23bab408bfa2b65677ce0efe9882639e491b94167d1d63a",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part3.lean": "acd935f7403a4d6771a0b3b6fbd34e778e7a772a05c60ba1cba58d565b0471a5",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part4.lean": "f1766a649c6447ea65123ee011d0fdbb3a9ae567264ca35111e1d1a7340b1bb0",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part5.lean": "acee181123fe0e79279dcae55b9ec4636b449d74f360152fa713c0e6772659a7",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part0.lean": "25e913509a7e1914e61f8a22a96d1936fa364d873e9b81ae5e3710125178d7e2",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part1.lean": "66de1850e6b1ce67a5e8f1af5056d8097485d96695b39457df86ccb667ec882d",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part2.lean": "7b50bad22e9e6f036f13a91cb9b5d6ad83c0d17294aa9123e29527bb71c870b2",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part3.lean": "39004301270ffbbd6e40dc3f0f37dbbb3b321f2b6f70444900bc0520a0eb3f91",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part4.lean": "2e1180b4aaaa21006ef4afb536670ff911f210adff02995dd048601f4c7c0b3e",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part5.lean": "86e5f9a3a155e6846e6a97dcd5077f9f37def5e7cc33da1c67e6fbc0437e3b5b",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part0.lean": "29de4c39c22ee9cd632d2309bebf62e2038369b8f111cd739c76a28c3eb44f37",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part1.lean": "fb159d0dfae5cc7f0744e7a9c0e3f7eeaca92f25cb1f861bd3acded1a09e0535",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part2.lean": "da2596e7563d836ac7a34ce5fcf3e9d82f984880ec18c07c60e4e3cf72c8b08c",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part3.lean": "e641eed6b9fc45b43853fbcb6e3e6d6f8b1c2a32e35cb077a2924f5225ddb08a",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part4.lean": "eb0e9174b2066bcdd1c66ad8b99812dec69ed75ba560f18180532960e939354c",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part5.lean": "bd6d07cbe37002eebcb5032ee7c214088760c14c6d1a31b95c344bd054c4ed12",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part0.lean": "a38ea973e06d15d37aa9ddfc8d9065025027d5444a08afc26ff9a5a0d3267c14",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part1.lean": "b59eff008ea824a77e7a72136dac440d1ca200ccc7382be62c6fbc38b19bd3ca",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part2.lean": "75b76f778f6e07784656f077cb4455cf13ce5a1460859ffdca1038744652766e",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part3.lean": "55403722255a2e3b23a0f5525ce9dddf6c9201add5006016c1fd0b37c05a0096",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part4.lean": "dd53934d3d3a2354f520c824c5528fe7180d80e33ca44f3481d6860504fb45af",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part5.lean": "a4b2835eb1c6ab22d950e164b58a2176e4aa33499aabc28991da8dd9279a2269",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts.lean": "0a83b51c674a22c98360418ff09ab10de0c8af42bdba460ed9b5fdf1d26dfba4",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierX0.lean": "e4fa99994fd6ae0c7b1f6e3190926b088a819b742e5a41c7daa0f9c8098886ee",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierX1.lean": "36e88b5bad5e23aff8427e4b60cb26a6c2532efd095c17a6300b6ff32c609edf",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierZ0.lean": "4731c1c2ba69dc349166cab0ae6441232effbf7150bd80047827524f3a881749",
+    "QEC/Stabilizer/Codes/Mitten/M150/ClassifierZ1.lean": "6113d58ad1b0278b08546606a0d709e9c3afa3579bf0d744d4664afc4a1eba8b",
+    "QEC/Stabilizer/Codes/Mitten/M150/Data.lean": "e7e5491646160ad85f6ae4bb6912e62c97860143ab55aea04df734c3659e8c50",
+    "QEC/Stabilizer/Codes/Mitten/M150/Defs.lean": "68db910bc5e08f08897c18e667bf9c442ac4cdd0d850c6d49776303651e81f0d",
+    "QEC/Stabilizer/Codes/Mitten/M150/Distance.lean": "a0b9e45b908caa442a3de5374efa669dfee8545595fe20a80deacc91f46f9c93",
+    "QEC/Stabilizer/Codes/Mitten/M150/FloorBridge.lean": "1f44c5292333222f22ff30f3be77b8d8dd5724f0b221acc6a8ac7d7ea224d861",
+    "QEC/Stabilizer/Codes/Mitten/M150/FloorChecksX.lean": "715ecb3dbf87fe6da9f13909880cc79f3b0fa88322f4137f70e377285ea74fde",
+    "QEC/Stabilizer/Codes/Mitten/M150/FloorChecksZ.lean": "3fee3b45fa4d2a11ae65d6389c2fc32b52df77c609f37f1c345caeed021d6bc8",
+    "QEC/Stabilizer/Codes/Mitten/M150/FloorCore.lean": "56474d99fe7daaea2999e023fcbe295218aa9429f08c5c9cac4f3b062be60946",
+    "QEC/Stabilizer/Codes/Mitten/M150/FloorData.lean": "aeab35b63bd9a05da32ee571b2d94ed861bd88712b17f13a75aee1f49e8f972e",
+    "QEC/Stabilizer/Codes/Mitten/M150/FloorSweepX.lean": "3d43836b44f145b3021c9c460312c7f63f28fcd6d431cccb2fa683bf28ac9f4b",
+    "QEC/Stabilizer/Codes/Mitten/M150/FloorSweepZ.lean": "273d13cea7df8db093f047b34d2eed1f1da02ab94f70cbc6873585385e6b6ae6",
+    "QEC/Stabilizer/Codes/Mitten/M150/FloorXSide.lean": "741e9c201436e79c7ede3fd87f65f439676376f528a30202a6f8eb24d0ad14c4",
+    "QEC/Stabilizer/Codes/Mitten/M150/FloorZSide.lean": "c1c9d7b38731e510d76627b214faf48c94260f302f801b69ffe1563be3d2e12d",
+    "QEC/Stabilizer/Codes/Mitten/M150/GroupedJoin.lean": "deaac8a8e5fbddd30a90066959450fb2a205535036a7987a339f0c0209fc097d",
+    "QEC/Stabilizer/Codes/Mitten/M150/JoinX.lean": "acd947c34fc83a29c58d0306a6cd3e8c4e09e9eed4cb2322230918cf87ee56df",
+    "QEC/Stabilizer/Codes/Mitten/M150/JoinZ.lean": "30c145c9cca48d3c56bc267d867e71bf0d3a60046575770215feb75971347a5e",
+    "QEC/Stabilizer/Codes/Mitten/M150/Logicals.lean": "d307ca99de6c8fa76e0b0d279e7b3ccdc32f28c607d0affce8c21269c1a008cc",
+    "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight0.lean": "650d9efa4cc7acc9c8bae940a16445efe492436f7c35c9322024c6384c7998fc",
+    "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight1.lean": "eb287bbc90a1e9f3c572c45065014283d7c2afc61a4e56a96b318f51118c97f9",
+    "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight2.lean": "d1f83f6de4279ac9b5a716b96418dcee80f401822c0f60d8147675359dcf15a0",
+    "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight3.lean": "b14775cd647442d61122dec9a7e7b6c939244938d367c31a15ec6cfd158ba946",
+    "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight4.lean": "7853cd8e3753c5a37a04e2fce8b6ca6abaf39908fdafed810e39848df47b2020",
+    "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks.lean": "1de9b035ab6ad4e907dedfe5c7b709bed43ee200d2713efb40f732b26b525aa7",
+    "QEC/Stabilizer/Codes/Mitten/M150/MaskEnumeration.lean": "56ed6154b60e81acb8d31778fd1bbd902a9364f98b79026ff1278f9067bf75ff",
+    "QEC/Stabilizer/Codes/Mitten/M150/PackedClassification.lean": "e56696b8b2914b84d6e8f834960cdeda2d10e67ad4b6750605364345c73abf7f",
+    "QEC/Stabilizer/Codes/Mitten/M150/PackedGridSweep.lean": "d8929e8fed0f45d807167b8f7e6f8b251019a78bb56d4e8a682e41f9205cfbbf",
+    "QEC/Stabilizer/Codes/Mitten/M150/PackedSweep.lean": "92a4156ffa8a7da40489389c0eed398ac50d576cd0cefc9a31d960cb18ac42e5",
+    "QEC/Stabilizer/Codes/Mitten/M150/Sparse.lean": "0b48641d24faa2c55d9a7bb73770cf5a9c710325c30f804828a7335abef88bde",
+    "QEC/Stabilizer/Codes/Mitten/M150/SparseSupport.lean": "792dbcff71804027976c17e4c4af74003ce2e5fafcf7d30c1b74f53c3455f39b",
+    "QEC/Stabilizer/Codes/Mitten/M150/StabilizerCode.lean": "5d380b7de2e0f763af5fba30720edd021123a551d089dfcac9e95e46bbd2b3d2",
+    "QEC/Stabilizer/Codes/Mitten/M150/SweepAdapters.lean": "91faaf0e1ebe51781d081c23d6d05fd6cd6dd6da263bc0958404c162ed7328db",
+    "QEC/Stabilizer/Codes/Mitten/M150/SweepMaps.lean": "f865f9d4c20077393ccca9e1c5d5f9f0742523f77fb809f0485f674a9c5978e3",
+    "QEC/Stabilizer/Codes/Mitten/M150/Witness.lean": "ebb6cd8ade5090648a21b7a4a6556c2b2149b43fee1b8d0db3a125984d7298f9",
+    "QEC/Stabilizer/Codes/Mitten/M150.lean": "3d6400e2d15fc4b8497fc51976e03e722edc4247f9d916a8a93d12bf47e3232f",
+    "QEC/Stabilizer/Codes/Mitten.lean": "8fb824c32a4672d3d23722940364db479c26cfc08970b1bd02132f6dcd089d0c",
+    "QEC/Stabilizer/Framework/Homological/Certificate/BatchLinear.lean": "7e75577e561573f037d80513d3a00593211b675371882aa1cca9f1501ebab1f3",
+    "QEC/Stabilizer/Framework/Homological/Certificate/MaskLinear.lean": "59ab2cee4055238e216a63e68ea0b41260f86c39a0c39e3b63849ab7f45a9312",
+    "QEC/Stabilizer/Framework/Homological/Certificate/OrbitPackedExtra.lean": "bd293406b6af1bb497c5460c4291723308d610977f33be9b5588e72178615423",
+    "QEC/Stabilizer/Framework/Homological/Certificate/PackedDigits.lean": "9bcd32ab79bb55f60e6bc30d35e21b0ec9e70066a3263bc7cb6ec89524844525",
+    "QEC/Stabilizer/Framework/Homological/Certificate/PackedEquality.lean": "fefe57008cffdde875c99fa2440ec96611fb7b0dbef45ea631ee6c866b1138fa",
+    "QEC/Stabilizer/Framework/Homological/Certificate/PackedGrid.lean": "a3869a62479f7feaf9b31ed3c0ce921697d67eedbd05f7ae83a7b8f9bc6e89d6",
+    "QEC/Stabilizer/Framework/Homological/Certificate/PackedLaneShifts.lean": "817015648d56079aa1ced89cd4fede3b8ceebe358cab6c091b136ab00176d7fa",
+    "QEC/Stabilizer/Framework/Homological/Certificate/PackedListCertificate.lean": "894f7f0239d0b7c8207b3a1dbdab9534af08e2cafb973917e03a41bd4e79a614",
+    "QEC/Stabilizer/Framework/Homological/Certificate/PackedPopcount.lean": "c74c1d17557b04e1dc56a58a45e37f940916ca0ef52b867da3401132075e6aaa",
+    "QEC/Stabilizer/Framework/Homological/Certificate/PackedPopcount32.lean": "a59830deca8e63454a401f675968aecf86a7c5c3182b080060d7066243a9894a",
+    "QEC/Stabilizer/Framework/Homological/Certificate.lean": "8f6b2bc3a2333808bf9142944e83dce1d80319445616185801544a944b319333",
+    "QEC/Stabilizer/Framework/Homological/LiftedProduct.lean": "300ae7ab5e090929d23d4c130c88b7d8a9dbd9ba535cd9a50d1a598ba05b7ad6"
+  },
+  "qeclean_revision": "03a4023a77b45f2728ee1d2e6522c56c14ca0847"
+}

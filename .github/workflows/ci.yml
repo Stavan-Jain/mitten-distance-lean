@@ -1,0 +1,78 @@
+name: Build and verify
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mitten-distance-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  certificates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: scripts/mitten/requirements.txt
+      - name: Install generator dependencies
+        run: python3 -m pip install -r scripts/mitten/requirements.txt
+      - name: Check module layout and dependency pin
+        run: python3 scripts/check_layout.py
+      - name: Test generation tooling
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Reproduce mitten certificates
+        run: python3 scripts/mitten/generate.py --verify
+
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      LEAN_NUM_THREADS: '1'
+      LAKE_ARTIFACT_CACHE: 'false'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: .lake
+          key: mitten-lean-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-${{ github.sha }}
+          restore-keys: |
+            mitten-lean-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('lean-toolchain', 'lake-manifest.json') }}-
+      - name: Add swap space
+        run: |
+          sudo fallocate -l 12G /mnt/mitten-distance.swap
+          sudo chmod 600 /mnt/mitten-distance.swap
+          sudo mkswap /mnt/mitten-distance.swap
+          sudo swapon /mnt/mitten-distance.swap
+          free -h
+      # Install Lean and matching dependency caches, then use our launcher
+      # for every proof build instead of the action's default lake build.
+      - uses: leanprover/lean-action@v1
+        with:
+          auto-config: 'false'
+          build: 'false'
+          test: 'false'
+          lint: 'false'
+          use-mathlib-cache: 'true'
+          use-github-cache: 'false'
+      - name: Build all mitten proof modules with bounded memory
+        run: python3 scripts/build_bounded.py --root . build
+      - name: Audit proof axioms
+        run: python3 scripts/build_bounded.py --root . env lean scripts/AxiomCheck.lean
+      - name: Check public parameters and canonical packaging
+        run: python3 scripts/build_bounded.py --root . env lean scripts/PublicApi.lean
+      - name: Preserve per-process measurements
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lean-process-measurements
+          path: .lake/mitten-bounded/lean-processes.jsonl
+          if-no-files-found: ignore

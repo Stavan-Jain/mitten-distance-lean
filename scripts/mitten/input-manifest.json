@@ -1,0 +1,46 @@
+{
+  "source_repository": "https://github.com/Stavan-Jain/qec-lab",
+  "source_revision": "0757e9dfe2eaabe4e71220fa8c41cb01a65af9e7",
+  "inputs": [
+    {
+      "path": "inputs/group_30_1.txt",
+      "sha256": "32099984642044f56a9d5114b9225cd6a46c46c67c9bc686932287940419c97a",
+      "source": "experiments/bb_lab/instances/mitten_groups/group_30_1.txt"
+    },
+    {
+      "path": "inputs/m4_triples.json",
+      "sha256": "d92639e5fc37b8605b22c126c55c62bf9aa5794f817aac17380c186da1eccb34",
+      "source": "experiments/bb_lab/data-a32/m4_triples.json"
+    },
+    {
+      "path": "inputs/witness.json",
+      "sha256": "da39a11917d36bd5c4322e63baf8c1c85617aaf14860f2fc834559bafa7d74f3",
+      "source": "QECLean@8a4566ea8e6d7b43d7722a98e772455d9870ca8d:QEC/Stabilizer/Codes/Mitten/M150/Data.lean (witSup, witPairSup)",
+      "source_sha256": "e7e5491646160ad85f6ae4bb6912e62c97860143ab55aea04df734c3659e8c50"
+    }
+  ],
+  "generator_sources": [
+    {
+      "path": "experiments/bb_lab/scripts/m150_gen_lean_data.py",
+      "sha256": "0f5dd8aa5c6dec2fc4a5495f10b997c250e43554bc42a19a7b7d2552e8d709b8"
+    },
+    {
+      "path": "experiments/bb_lab/scripts/a26_mitten_descent.py",
+      "sha256": "6f4523fe42c25747b27fae6777335484a1be09ca2e5e9825a51ac5ee95a2a132"
+    },
+    {
+      "path": "experiments/bb_lab/scripts/mitten_kernel/generate_joins.py",
+      "sha256": "d88d0ef4bc4c34d4775e308f3d84f60be3d60c5cd4df01241855f3e6dab4749e"
+    },
+    {
+      "path": "experiments/bb_lab/scripts/mitten_kernel/generate_sweeps.py",
+      "sha256": "0b21bd0211b0235b33bb88641605eb70e80080a476220aee2eabab6481263d8f"
+    }
+  ],
+  "adaptations": [
+    "Retain production instance and floor emission; remove historical rehearsal mode.",
+    "Extract only finite-group and direct matrix construction routines from A26.",
+    "Replace SAT witness discovery with validation of the pinned existing witness and pairing.",
+    "Retarget module imports and generated-file banners to MittenDistance."
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "source_repository": "https://github.com/Stavan-Jain/QECLean",
+  "source_revision": "8a4566ea8e6d7b43d7722a98e772455d9870ca8d",
+  "modules": [
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten.lean",
+      "target": "MittenDistance.lean",
+      "original_sha256": "8fb824c32a4672d3d23722940364db479c26cfc08970b1bd02132f6dcd089d0c",
+      "adapted_sha256": "8a1c81054fa2dc5e1379e01eb67b68e579d6a333a14300e463b954c93c37124a"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/CensusTables.lean",
+      "target": "MittenDistance/M150/CensusTables.lean",
+      "original_sha256": "535fde68d763ae0d53496dd5f7330d9b95e972f8546ac0ce3ce50d5910deb93b",
+      "adapted_sha256": "7ac9eb7792d219f2d4985491876a7c93d99b14e5477976cf22fbe0f73ae363ac"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part0.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X0Part0.lean",
+      "original_sha256": "613a67d664338ba6ba04ed15f8db658dcec296e3472516507af39c3da29ad7c4",
+      "adapted_sha256": "fb1c17788bd68fab9897ae55afecc243f1ece2adbb1f6096809ffca92c0aac3e"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part1.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X0Part1.lean",
+      "original_sha256": "8c1f81d84c41752342a0fa96c1f82821225240be264ef66b796d2d4168885f75",
+      "adapted_sha256": "210046cec19ad03c0f152c7800edc0dbae2cec7a8649c269c662149c093d204b"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part2.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X0Part2.lean",
+      "original_sha256": "b542c6a0764c4140e23bab408bfa2b65677ce0efe9882639e491b94167d1d63a",
+      "adapted_sha256": "4f0133b083423d86c554e8f2069998edaa7d158e644ecee88ae9ad3fbd4e4899"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part3.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X0Part3.lean",
+      "original_sha256": "acd935f7403a4d6771a0b3b6fbd34e778e7a772a05c60ba1cba58d565b0471a5",
+      "adapted_sha256": "e167a842256e92e2690bb5afc629edf2446cb34b2522ab4a38e2e9023366ce3e"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part4.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X0Part4.lean",
+      "original_sha256": "f1766a649c6447ea65123ee011d0fdbb3a9ae567264ca35111e1d1a7340b1bb0",
+      "adapted_sha256": "47b5d6fb565c2e6c2388207c3a3cd359679b2ad4ea95b4eede51294828b3b9be"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X0Part5.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X0Part5.lean",
+      "original_sha256": "acee181123fe0e79279dcae55b9ec4636b449d74f360152fa713c0e6772659a7",
+      "adapted_sha256": "fc14954c36b7bb5d678f5c6faa2490a2c5181163897c1aed63c0110cdd97e31f"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part0.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X1Part0.lean",
+      "original_sha256": "25e913509a7e1914e61f8a22a96d1936fa364d873e9b81ae5e3710125178d7e2",
+      "adapted_sha256": "7bbc96e601d4415a6e1d2a246285164c52f2aa245f81608e896eeef1c8c25079"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part1.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X1Part1.lean",
+      "original_sha256": "66de1850e6b1ce67a5e8f1af5056d8097485d96695b39457df86ccb667ec882d",
+      "adapted_sha256": "81ff93858eecb13c627eae56c383bb6f189ee85ec0db9b8712807985448c90db"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part2.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X1Part2.lean",
+      "original_sha256": "7b50bad22e9e6f036f13a91cb9b5d6ad83c0d17294aa9123e29527bb71c870b2",
+      "adapted_sha256": "19c9463b349eaaa28c4bff5c1c48d51cbec335bd493196aee3b6aabd88673d5a"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part3.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X1Part3.lean",
+      "original_sha256": "39004301270ffbbd6e40dc3f0f37dbbb3b321f2b6f70444900bc0520a0eb3f91",
+      "adapted_sha256": "7b7d9513415461066ca0ebefc5a67b063eb51b535a0aaff12c4a251473d59e06"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part4.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X1Part4.lean",
+      "original_sha256": "2e1180b4aaaa21006ef4afb536670ff911f210adff02995dd048601f4c7c0b3e",
+      "adapted_sha256": "377707e74b10269494cb7f7b86ec9d193af0f34506f5d5c16ceb8ded154cfa08"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/X1Part5.lean",
+      "target": "MittenDistance/M150/ClassifierParts/X1Part5.lean",
+      "original_sha256": "86e5f9a3a155e6846e6a97dcd5077f9f37def5e7cc33da1c67e6fbc0437e3b5b",
+      "adapted_sha256": "df7a6dc7239b0d01e90dfc723b2a69974369092f2b4b17fd435a4ce0dc70c251"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part0.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z0Part0.lean",
+      "original_sha256": "29de4c39c22ee9cd632d2309bebf62e2038369b8f111cd739c76a28c3eb44f37",
+      "adapted_sha256": "c14fec0831c5c886bee684354281f1996680c3e0d9848eab01fd3c606a02be07"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part1.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z0Part1.lean",
+      "original_sha256": "fb159d0dfae5cc7f0744e7a9c0e3f7eeaca92f25cb1f861bd3acded1a09e0535",
+      "adapted_sha256": "c6672dbf6f163e7e63cddbfc16e8da03dcbe5f2423c66ce9cbc6119da3a0ee72"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part2.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z0Part2.lean",
+      "original_sha256": "da2596e7563d836ac7a34ce5fcf3e9d82f984880ec18c07c60e4e3cf72c8b08c",
+      "adapted_sha256": "dae5741ba6722c11951ba7e1de959b2bee2e651406c20cc818a74ddd451142f5"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part3.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z0Part3.lean",
+      "original_sha256": "e641eed6b9fc45b43853fbcb6e3e6d6f8b1c2a32e35cb077a2924f5225ddb08a",
+      "adapted_sha256": "6bca9767d4f78ff94cf79041967aef355ffb21fbf970122dd94c1888d0e9c950"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part4.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z0Part4.lean",
+      "original_sha256": "eb0e9174b2066bcdd1c66ad8b99812dec69ed75ba560f18180532960e939354c",
+      "adapted_sha256": "f30d8cea92c46423f2f7f80163db6a78cb214def17900831784b929e1ccfc25d"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z0Part5.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z0Part5.lean",
+      "original_sha256": "bd6d07cbe37002eebcb5032ee7c214088760c14c6d1a31b95c344bd054c4ed12",
+      "adapted_sha256": "309c6a4d3c27c71a94e84c60f5ded054a2ad58a7e20602aae7a6909757ef4537"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part0.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z1Part0.lean",
+      "original_sha256": "a38ea973e06d15d37aa9ddfc8d9065025027d5444a08afc26ff9a5a0d3267c14",
+      "adapted_sha256": "6b1c300ce9fd650bd327fe5ff2c75ecc3fa8952c175603c2f0afee244a10ca1c"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part1.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z1Part1.lean",
+      "original_sha256": "b59eff008ea824a77e7a72136dac440d1ca200ccc7382be62c6fbc38b19bd3ca",
+      "adapted_sha256": "11aad6cf1d07f8fba9ebab396bf140eeef79d86056d34368a3535bf06c43b389"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part2.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z1Part2.lean",
+      "original_sha256": "75b76f778f6e07784656f077cb4455cf13ce5a1460859ffdca1038744652766e",
+      "adapted_sha256": "67cdfa4e9fa5ce2a3f71fcde360b3573c6e77e58a8b10366e76018a0728d0738"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part3.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z1Part3.lean",
+      "original_sha256": "55403722255a2e3b23a0f5525ce9dddf6c9201add5006016c1fd0b37c05a0096",
+      "adapted_sha256": "29c60863c1813b08dd39b3bee95c3aa29f5283564d33a6a78905e28f3b64104d"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part4.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z1Part4.lean",
+      "original_sha256": "dd53934d3d3a2354f520c824c5528fe7180d80e33ca44f3481d6860504fb45af",
+      "adapted_sha256": "d05e110542ab8432eaa5e4003783d26a397a192a89c2dcac4e416e61c04ecf44"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts/Z1Part5.lean",
+      "target": "MittenDistance/M150/ClassifierParts/Z1Part5.lean",
+      "original_sha256": "a4b2835eb1c6ab22d950e164b58a2176e4aa33499aabc28991da8dd9279a2269",
+      "adapted_sha256": "24e983d9629fd0db6684a7ebb95194c99682a795390915c760e59734b41d5016"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierParts.lean",
+      "target": "MittenDistance/M150/ClassifierParts.lean",
+      "original_sha256": "0a83b51c674a22c98360418ff09ab10de0c8af42bdba460ed9b5fdf1d26dfba4",
+      "adapted_sha256": "4c2f2821af7cd79322f3eed6caf503d337ddfd6e769882729ddb3f150da14cc5"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierX0.lean",
+      "target": "MittenDistance/M150/ClassifierX0.lean",
+      "original_sha256": "e4fa99994fd6ae0c7b1f6e3190926b088a819b742e5a41c7daa0f9c8098886ee",
+      "adapted_sha256": "d05bfd10be94dfdf4587abc9894b2ae0d837e8f38865a1fe9c4d57d1b896b906"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierX1.lean",
+      "target": "MittenDistance/M150/ClassifierX1.lean",
+      "original_sha256": "36e88b5bad5e23aff8427e4b60cb26a6c2532efd095c17a6300b6ff32c609edf",
+      "adapted_sha256": "5d866799fdb6ed00ce7e494362bd37666c1cf27f97031960ac89ce29d9bf0f85"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierZ0.lean",
+      "target": "MittenDistance/M150/ClassifierZ0.lean",
+      "original_sha256": "4731c1c2ba69dc349166cab0ae6441232effbf7150bd80047827524f3a881749",
+      "adapted_sha256": "e227245361049d325ea9bad52970db4c8147eca667b86c7eced2a3c30f3b1085"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/ClassifierZ1.lean",
+      "target": "MittenDistance/M150/ClassifierZ1.lean",
+      "original_sha256": "6113d58ad1b0278b08546606a0d709e9c3afa3579bf0d744d4664afc4a1eba8b",
+      "adapted_sha256": "a7f2e33bd92159787f966426354654f2a76113bf394f3d19f18993a1841f2f8d"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/Data.lean",
+      "target": "MittenDistance/M150/Data.lean",
+      "original_sha256": "e7e5491646160ad85f6ae4bb6912e62c97860143ab55aea04df734c3659e8c50",
+      "adapted_sha256": "77ff46e91b0dca84e461634134a68470c23409e647c89fe96c6b40f1ba324bac"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/Defs.lean",
+      "target": "MittenDistance/M150/Defs.lean",
+      "original_sha256": "68db910bc5e08f08897c18e667bf9c442ac4cdd0d850c6d49776303651e81f0d",
+      "adapted_sha256": "aceffc157be184ee4164817d383b9dff440edb2fa1913825a2becb1db5885710"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/Distance.lean",
+      "target": "MittenDistance/M150/Distance.lean",
+      "original_sha256": "a0b9e45b908caa442a3de5374efa669dfee8545595fe20a80deacc91f46f9c93",
+      "adapted_sha256": "53054ad6690dacbe7bcf90f8622e68a80ade4e292544e1df9746d01233b4aadc"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorBridge.lean",
+      "target": "MittenDistance/M150/FloorBridge.lean",
+      "original_sha256": "1f44c5292333222f22ff30f3be77b8d8dd5724f0b221acc6a8ac7d7ea224d861",
+      "adapted_sha256": "bcf7c0a42c28ea211c7d261020b3a10570c18bb956a55b65e5c1961b4e23a62f"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorChecksX.lean",
+      "target": "MittenDistance/M150/FloorChecksX.lean",
+      "original_sha256": "715ecb3dbf87fe6da9f13909880cc79f3b0fa88322f4137f70e377285ea74fde",
+      "adapted_sha256": "24944dd5c2bcb315046e5224555b4d30b471e11d074de27c6865ceffefc49381"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorChecksZ.lean",
+      "target": "MittenDistance/M150/FloorChecksZ.lean",
+      "original_sha256": "3fee3b45fa4d2a11ae65d6389c2fc32b52df77c609f37f1c345caeed021d6bc8",
+      "adapted_sha256": "9a0c952efabbef5026c581899dabe9115836a8ecf3bb3a198eaa88156e5281c9"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorCore.lean",
+      "target": "MittenDistance/M150/FloorCore.lean",
+      "original_sha256": "56474d99fe7daaea2999e023fcbe295218aa9429f08c5c9cac4f3b062be60946",
+      "adapted_sha256": "56474d99fe7daaea2999e023fcbe295218aa9429f08c5c9cac4f3b062be60946"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorData.lean",
+      "target": "MittenDistance/M150/FloorData.lean",
+      "original_sha256": "aeab35b63bd9a05da32ee571b2d94ed861bd88712b17f13a75aee1f49e8f972e",
+      "adapted_sha256": "bf75923731078d5ed6f88580c36c4ccbcaab80ec7a140e57a03bdae51a10ad73"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorSweepX.lean",
+      "target": "MittenDistance/M150/FloorSweepX.lean",
+      "original_sha256": "3d43836b44f145b3021c9c460312c7f63f28fcd6d431cccb2fa683bf28ac9f4b",
+      "adapted_sha256": "764c6d6bb3f021df2ebd78960ca2f0a2b81242c5c4a6cb75a3f3d27e992ef52a"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorSweepZ.lean",
+      "target": "MittenDistance/M150/FloorSweepZ.lean",
+      "original_sha256": "273d13cea7df8db093f047b34d2eed1f1da02ab94f70cbc6873585385e6b6ae6",
+      "adapted_sha256": "040df4bb1c0d558523314283e59cec12abeed9fb526fd51f955f9b3690df37bf"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorXSide.lean",
+      "target": "MittenDistance/M150/FloorXSide.lean",
+      "original_sha256": "741e9c201436e79c7ede3fd87f65f439676376f528a30202a6f8eb24d0ad14c4",
+      "adapted_sha256": "0fd422812e569a22d507355c7328348b29d54490d572bfccd736680f808c714f"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/FloorZSide.lean",
+      "target": "MittenDistance/M150/FloorZSide.lean",
+      "original_sha256": "c1c9d7b38731e510d76627b214faf48c94260f302f801b69ffe1563be3d2e12d",
+      "adapted_sha256": "c330c940f36466d506d87ea645fbe6cf6a1950ce4dcc83981d6f10fb9bca5a12"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/GroupedJoin.lean",
+      "target": "MittenDistance/M150/GroupedJoin.lean",
+      "original_sha256": "deaac8a8e5fbddd30a90066959450fb2a205535036a7987a339f0c0209fc097d",
+      "adapted_sha256": "c643c0caf9a44435c976e50051447298be01d8010f37c404c3c99dbae5aa1d1f"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/JoinX.lean",
+      "target": "MittenDistance/M150/JoinX.lean",
+      "original_sha256": "acd947c34fc83a29c58d0306a6cd3e8c4e09e9eed4cb2322230918cf87ee56df",
+      "adapted_sha256": "a5d57f85c5afd2fdbcec5098cf601dc286c225b23c42adde2f08caacbf6133ca"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/JoinZ.lean",
+      "target": "MittenDistance/M150/JoinZ.lean",
+      "original_sha256": "30c145c9cca48d3c56bc267d867e71bf0d3a60046575770215feb75971347a5e",
+      "adapted_sha256": "4806d34b372cb18424ae97e8c607d4d90c02f03efbd7b7a8d39e8a0260380655"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/Logicals.lean",
+      "target": "MittenDistance/M150/Logicals.lean",
+      "original_sha256": "d307ca99de6c8fa76e0b0d279e7b3ccdc32f28c607d0affce8c21269c1a008cc",
+      "adapted_sha256": "4b9b29fd1c5cb37807724f68abff168608e1e8a736f52dc8e51f6b6457f3759c"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight0.lean",
+      "target": "MittenDistance/M150/MaskChunks/Weight0.lean",
+      "original_sha256": "650d9efa4cc7acc9c8bae940a16445efe492436f7c35c9322024c6384c7998fc",
+      "adapted_sha256": "527ba1531917ef2db38324d7a00fb561c6fc8b08fd4506ed1f9404241577c5b3"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight1.lean",
+      "target": "MittenDistance/M150/MaskChunks/Weight1.lean",
+      "original_sha256": "eb287bbc90a1e9f3c572c45065014283d7c2afc61a4e56a96b318f51118c97f9",
+      "adapted_sha256": "cd934befc47e978fc8189257803c6b91e8a2a123bc180e3000855f3d845b3f03"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight2.lean",
+      "target": "MittenDistance/M150/MaskChunks/Weight2.lean",
+      "original_sha256": "d1f83f6de4279ac9b5a716b96418dcee80f401822c0f60d8147675359dcf15a0",
+      "adapted_sha256": "c8a3973a1bfdd78ae1a9cc2842f6bed05ad6995fe7871711c83169a56fccbe4f"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight3.lean",
+      "target": "MittenDistance/M150/MaskChunks/Weight3.lean",
+      "original_sha256": "b14775cd647442d61122dec9a7e7b6c939244938d367c31a15ec6cfd158ba946",
+      "adapted_sha256": "c4e55d18cbec5ff27cfe81d4b65790b8181a60ffb6441dd9cea4e538862dc383"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks/Weight4.lean",
+      "target": "MittenDistance/M150/MaskChunks/Weight4.lean",
+      "original_sha256": "7853cd8e3753c5a37a04e2fce8b6ca6abaf39908fdafed810e39848df47b2020",
+      "adapted_sha256": "b8531dc83bcced16859d47234e8d21c2906973097e011c54b1403451abd09001"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskChunks.lean",
+      "target": "MittenDistance/M150/MaskChunks.lean",
+      "original_sha256": "1de9b035ab6ad4e907dedfe5c7b709bed43ee200d2713efb40f732b26b525aa7",
+      "adapted_sha256": "ed8964f58cd2ca287af0d6a07b2aac913374dad7b539c2d789dec2e110d4b90e"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/MaskEnumeration.lean",
+      "target": "MittenDistance/M150/MaskEnumeration.lean",
+      "original_sha256": "56ed6154b60e81acb8d31778fd1bbd902a9364f98b79026ff1278f9067bf75ff",
+      "adapted_sha256": "71f379259b46e2dc141dc79163a116dad3a1ce55380bd6ccc0bf84daca3a4bb6"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/PackedClassification.lean",
+      "target": "MittenDistance/M150/PackedClassification.lean",
+      "original_sha256": "e56696b8b2914b84d6e8f834960cdeda2d10e67ad4b6750605364345c73abf7f",
+      "adapted_sha256": "7853a92002b2a847136995eba3a28a947d749daa01243340a95984225e3451a5"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/PackedGridSweep.lean",
+      "target": "MittenDistance/M150/PackedGridSweep.lean",
+      "original_sha256": "d8929e8fed0f45d807167b8f7e6f8b251019a78bb56d4e8a682e41f9205cfbbf",
+      "adapted_sha256": "a71f19ba2409c95e1da2c4e023152b26c870259bef581e4efd715252078f573d"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/PackedSweep.lean",
+      "target": "MittenDistance/M150/PackedSweep.lean",
+      "original_sha256": "92a4156ffa8a7da40489389c0eed398ac50d576cd0cefc9a31d960cb18ac42e5",
+      "adapted_sha256": "2e9d4ddce6efd23ee6958afbf102fd7016a47c63d0fb8ccf09caa1c7bab3f63b"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/Sparse.lean",
+      "target": "MittenDistance/M150/Sparse.lean",
+      "original_sha256": "0b48641d24faa2c55d9a7bb73770cf5a9c710325c30f804828a7335abef88bde",
+      "adapted_sha256": "e113bff67b92b76621db3f35de60b060671a36190a5738f0387ffcda39b3e436"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/SparseSupport.lean",
+      "target": "MittenDistance/M150/SparseSupport.lean",
+      "original_sha256": "792dbcff71804027976c17e4c4af74003ce2e5fafcf7d30c1b74f53c3455f39b",
+      "adapted_sha256": "006ba6282796e84417a612d37d0d9cc639285f3dc5ce47c6111d44cebf36ef84"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/StabilizerCode.lean",
+      "target": "MittenDistance/M150/StabilizerCode.lean",
+      "original_sha256": "5d380b7de2e0f763af5fba30720edd021123a551d089dfcac9e95e46bbd2b3d2",
+      "adapted_sha256": "2b938a23b7b42e0c919db415d1d774689a065dcf39384e0428c8016553a47ba3"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/SweepAdapters.lean",
+      "target": "MittenDistance/M150/SweepAdapters.lean",
+      "original_sha256": "91faaf0e1ebe51781d081c23d6d05fd6cd6dd6da263bc0958404c162ed7328db",
+      "adapted_sha256": "a7671341524fd185ffd10ac65095f588a6d9240f86692ec94dace9bb06597a17"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/SweepMaps.lean",
+      "target": "MittenDistance/M150/SweepMaps.lean",
+      "original_sha256": "f865f9d4c20077393ccca9e1c5d5f9f0742523f77fb809f0485f674a9c5978e3",
+      "adapted_sha256": "8aa09a034550ed87075ece730cd922d757a970e73e98f6b3e6c6ffede74307eb"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150/Witness.lean",
+      "target": "MittenDistance/M150/Witness.lean",
+      "original_sha256": "ebb6cd8ade5090648a21b7a4a6556c2b2149b43fee1b8d0db3a125984d7298f9",
+      "adapted_sha256": "a67e3b161862831f4f796a9888ebc997cabe60519489c91df4c7090b07e5e5ab"
+    },
+    {
+      "source": "QEC/Stabilizer/Codes/Mitten/M150.lean",
+      "target": "MittenDistance/M150.lean",
+      "original_sha256": "3d6400e2d15fc4b8497fc51976e03e722edc4247f9d916a8a93d12bf47e3232f",
+      "adapted_sha256": "02f62d25edc2eb23b0eb649be5cde54f7e99d49d2558273a575df6f1748203cb"
+    }
+  ],
+  "adaptations": [
+    "Import root changed from QEC.Stabilizer.Codes.Mitten to MittenDistance.",
+    "Generated-file banners identify the standalone emitters.",
+    "All text from the first import onward is otherwise identical after import-root normalization."
+  ]
+}

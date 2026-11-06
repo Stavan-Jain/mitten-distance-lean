@@ -1,0 +1,499 @@
+{
+  "date": "2026-11-06",
+  "lean_toolchain": "leanprover/lean4:v4.30.0-rc2",
+  "qeclean_revision": "b5a9f13d17b656091bf95024be8ebaf457d2c3a6",
+  "method": "First standalone source build: no local MittenDistance artifacts; matching dependency caches reused. One Lean process and worker, 4608 MB allocation guard.",
+  "local_modules": 64,
+  "full_build_seconds": 493.7,
+  "local_lean_seconds": 483.575,
+  "peak_rss_bytes": 4365500416,
+  "checks": [
+    {
+      "check": "full-build",
+      "returncode": 0,
+      "seconds": 493.7
+    },
+    {
+      "check": "axioms",
+      "returncode": 0,
+      "seconds": 3.7
+    },
+    {
+      "check": "public-api",
+      "returncode": 0,
+      "seconds": 2.69
+    }
+  ],
+  "axiom_audit": {
+    "declarations": 11119,
+    "modules": 137,
+    "allowed": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "generator_verification": {
+    "status": "passed",
+    "lean_modules": 43,
+    "hashed_inputs": 3,
+    "python": "3.11.14",
+    "numpy": "2.4.6",
+    "unit_tests_passed": 5
+  },
+  "proof_preservation": {
+    "source_revision": "8a4566ea8e6d7b43d7722a98e772455d9870ca8d",
+    "modules": 64,
+    "normalization": "Only import-root replacement and leading generated banners; remaining text matches exactly."
+  },
+  "module_measurements": [
+    {
+      "source": "MittenDistance/M150/FloorCore.lean",
+      "seconds": 7.861,
+      "peak_rss_bytes": 1839005696,
+      "returncode": 0,
+      "sha256": "56474d99fe7daaea2999e023fcbe295218aa9429f08c5c9cac4f3b062be60946"
+    },
+    {
+      "source": "MittenDistance/M150/FloorData.lean",
+      "seconds": 7.309,
+      "peak_rss_bytes": 2123071488,
+      "returncode": 0,
+      "sha256": "bf75923731078d5ed6f88580c36c4ccbcaab80ec7a140e57a03bdae51a10ad73"
+    },
+    {
+      "source": "MittenDistance/M150/SweepAdapters.lean",
+      "seconds": 1.339,
+      "peak_rss_bytes": 1740668928,
+      "returncode": 0,
+      "sha256": "a7671341524fd185ffd10ac65095f588a6d9240f86692ec94dace9bb06597a17"
+    },
+    {
+      "source": "MittenDistance/M150/MaskEnumeration.lean",
+      "seconds": 1.004,
+      "peak_rss_bytes": 1733509120,
+      "returncode": 0,
+      "sha256": "71f379259b46e2dc141dc79163a116dad3a1ce55380bd6ccc0bf84daca3a4bb6"
+    },
+    {
+      "source": "MittenDistance/M150/MaskChunks/Weight0.lean",
+      "seconds": 1.05,
+      "peak_rss_bytes": 1724579840,
+      "returncode": 0,
+      "sha256": "527ba1531917ef2db38324d7a00fb561c6fc8b08fd4506ed1f9404241577c5b3"
+    },
+    {
+      "source": "MittenDistance/M150/MaskChunks/Weight1.lean",
+      "seconds": 1.032,
+      "peak_rss_bytes": 1727545344,
+      "returncode": 0,
+      "sha256": "cd934befc47e978fc8189257803c6b91e8a2a123bc180e3000855f3d845b3f03"
+    },
+    {
+      "source": "MittenDistance/M150/MaskChunks/Weight2.lean",
+      "seconds": 1.669,
+      "peak_rss_bytes": 1797963776,
+      "returncode": 0,
+      "sha256": "c8a3973a1bfdd78ae1a9cc2842f6bed05ad6995fe7871711c83169a56fccbe4f"
+    },
+    {
+      "source": "MittenDistance/M150/MaskChunks/Weight3.lean",
+      "seconds": 10.689,
+      "peak_rss_bytes": 2126692352,
+      "returncode": 0,
+      "sha256": "c4e55d18cbec5ff27cfe81d4b65790b8181a60ffb6441dd9cea4e538862dc383"
+    },
+    {
+      "source": "MittenDistance/M150/MaskChunks/Weight4.lean",
+      "seconds": 22.012,
+      "peak_rss_bytes": 2689204224,
+      "returncode": 0,
+      "sha256": "b8531dc83bcced16859d47234e8d21c2906973097e011c54b1403451abd09001"
+    },
+    {
+      "source": "MittenDistance/M150/MaskChunks.lean",
+      "seconds": 0.93,
+      "peak_rss_bytes": 1708523520,
+      "returncode": 0,
+      "sha256": "ed8964f58cd2ca287af0d6a07b2aac913374dad7b539c2d789dec2e110d4b90e"
+    },
+    {
+      "source": "MittenDistance/M150/PackedSweep.lean",
+      "seconds": 2.116,
+      "peak_rss_bytes": 1978384384,
+      "returncode": 0,
+      "sha256": "2e9d4ddce6efd23ee6958afbf102fd7016a47c63d0fb8ccf09caa1c7bab3f63b"
+    },
+    {
+      "source": "MittenDistance/M150/PackedClassification.lean",
+      "seconds": 1.25,
+      "peak_rss_bytes": 1980547072,
+      "returncode": 0,
+      "sha256": "7853a92002b2a847136995eba3a28a947d749daa01243340a95984225e3451a5"
+    },
+    {
+      "source": "MittenDistance/M150/PackedGridSweep.lean",
+      "seconds": 1.374,
+      "peak_rss_bytes": 1987657728,
+      "returncode": 0,
+      "sha256": "a71f19ba2409c95e1da2c4e023152b26c870259bef581e4efd715252078f573d"
+    },
+    {
+      "source": "MittenDistance/M150/SweepMaps.lean",
+      "seconds": 4.122,
+      "peak_rss_bytes": 2099183616,
+      "returncode": 0,
+      "sha256": "8aa09a034550ed87075ece730cd922d757a970e73e98f6b3e6c6ffede74307eb"
+    },
+    {
+      "source": "MittenDistance/M150/CensusTables.lean",
+      "seconds": 11.302,
+      "peak_rss_bytes": 2452684800,
+      "returncode": 0,
+      "sha256": "7ac9eb7792d219f2d4985491876a7c93d99b14e5477976cf22fbe0f73ae363ac"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z1Part5.lean",
+      "seconds": 14.189,
+      "peak_rss_bytes": 3239559168,
+      "returncode": 0,
+      "sha256": "24e983d9629fd0db6684a7ebb95194c99682a795390915c760e59734b41d5016"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z1Part4.lean",
+      "seconds": 23.699,
+      "peak_rss_bytes": 3822239744,
+      "returncode": 0,
+      "sha256": "d05e110542ab8432eaa5e4003783d26a397a192a89c2dcac4e416e61c04ecf44"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z1Part3.lean",
+      "seconds": 14.535,
+      "peak_rss_bytes": 2640461824,
+      "returncode": 0,
+      "sha256": "29c60863c1813b08dd39b3bee95c3aa29f5283564d33a6a78905e28f3b64104d"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z1Part2.lean",
+      "seconds": 4.436,
+      "peak_rss_bytes": 2581987328,
+      "returncode": 0,
+      "sha256": "67cdfa4e9fa5ce2a3f71fcde360b3573c6e77e58a8b10366e76018a0728d0738"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z1Part1.lean",
+      "seconds": 3.801,
+      "peak_rss_bytes": 2226847744,
+      "returncode": 0,
+      "sha256": "11aad6cf1d07f8fba9ebab396bf140eeef79d86056d34368a3535bf06c43b389"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z1Part0.lean",
+      "seconds": 2.425,
+      "peak_rss_bytes": 2061467648,
+      "returncode": 0,
+      "sha256": "6b1c300ce9fd650bd327fe5ff2c75ecc3fa8952c175603c2f0afee244a10ca1c"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z0Part5.lean",
+      "seconds": 14.172,
+      "peak_rss_bytes": 3604119552,
+      "returncode": 0,
+      "sha256": "309c6a4d3c27c71a94e84c60f5ded054a2ad58a7e20602aae7a6909757ef4537"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z0Part4.lean",
+      "seconds": 26.87,
+      "peak_rss_bytes": 3900145664,
+      "returncode": 0,
+      "sha256": "f30d8cea92c46423f2f7f80163db6a78cb214def17900831784b929e1ccfc25d"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z0Part3.lean",
+      "seconds": 18.054,
+      "peak_rss_bytes": 2566733824,
+      "returncode": 0,
+      "sha256": "6bca9767d4f78ff94cf79041967aef355ffb21fbf970122dd94c1888d0e9c950"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z0Part2.lean",
+      "seconds": 4.989,
+      "peak_rss_bytes": 2625159168,
+      "returncode": 0,
+      "sha256": "dae5741ba6722c11951ba7e1de959b2bee2e651406c20cc818a74ddd451142f5"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z0Part1.lean",
+      "seconds": 4.99,
+      "peak_rss_bytes": 2229796864,
+      "returncode": 0,
+      "sha256": "c6672dbf6f163e7e63cddbfc16e8da03dcbe5f2423c66ce9cbc6119da3a0ee72"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/Z0Part0.lean",
+      "seconds": 3.797,
+      "peak_rss_bytes": 2084978688,
+      "returncode": 0,
+      "sha256": "c14fec0831c5c886bee684354281f1996680c3e0d9848eab01fd3c606a02be07"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X1Part5.lean",
+      "seconds": 30.732,
+      "peak_rss_bytes": 3569319936,
+      "returncode": 0,
+      "sha256": "df7a6dc7239b0d01e90dfc723b2a69974369092f2b4b17fd435a4ce0dc70c251"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X1Part4.lean",
+      "seconds": 21.748,
+      "peak_rss_bytes": 3808215040,
+      "returncode": 0,
+      "sha256": "377707e74b10269494cb7f7b86ec9d193af0f34506f5d5c16ceb8ded154cfa08"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X1Part3.lean",
+      "seconds": 12.941,
+      "peak_rss_bytes": 2666364928,
+      "returncode": 0,
+      "sha256": "7b7d9513415461066ca0ebefc5a67b063eb51b535a0aaff12c4a251473d59e06"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X1Part2.lean",
+      "seconds": 5.936,
+      "peak_rss_bytes": 2606235648,
+      "returncode": 0,
+      "sha256": "19c9463b349eaaa28c4bff5c1c48d51cbec335bd493196aee3b6aabd88673d5a"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X1Part1.lean",
+      "seconds": 4.419,
+      "peak_rss_bytes": 2239102976,
+      "returncode": 0,
+      "sha256": "81ff93858eecb13c627eae56c383bb6f189ee85ec0db9b8712807985448c90db"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X1Part0.lean",
+      "seconds": 2.628,
+      "peak_rss_bytes": 2067202048,
+      "returncode": 0,
+      "sha256": "7bbc96e601d4415a6e1d2a246285164c52f2aa245f81608e896eeef1c8c25079"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X0Part5.lean",
+      "seconds": 29.182,
+      "peak_rss_bytes": 3906977792,
+      "returncode": 0,
+      "sha256": "fc14954c36b7bb5d678f5c6faa2490a2c5181163897c1aed63c0110cdd97e31f"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X0Part4.lean",
+      "seconds": 20.162,
+      "peak_rss_bytes": 3592011776,
+      "returncode": 0,
+      "sha256": "47b5d6fb565c2e6c2388207c3a3cd359679b2ad4ea95b4eede51294828b3b9be"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X0Part3.lean",
+      "seconds": 10.632,
+      "peak_rss_bytes": 2496282624,
+      "returncode": 0,
+      "sha256": "e167a842256e92e2690bb5afc629edf2446cb34b2522ab4a38e2e9023366ce3e"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X0Part2.lean",
+      "seconds": 5.875,
+      "peak_rss_bytes": 2568060928,
+      "returncode": 0,
+      "sha256": "4f0133b083423d86c554e8f2069998edaa7d158e644ecee88ae9ad3fbd4e4899"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X0Part1.lean",
+      "seconds": 4.243,
+      "peak_rss_bytes": 2213085184,
+      "returncode": 0,
+      "sha256": "210046cec19ad03c0f152c7800edc0dbae2cec7a8649c269c662149c093d204b"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts/X0Part0.lean",
+      "seconds": 2.653,
+      "peak_rss_bytes": 2065825792,
+      "returncode": 0,
+      "sha256": "fb1c17788bd68fab9897ae55afecc243f1ece2adbb1f6096809ffca92c0aac3e"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierZ1.lean",
+      "seconds": 1.149,
+      "peak_rss_bytes": 2019803136,
+      "returncode": 0,
+      "sha256": "a7f2e33bd92159787f966426354654f2a76113bf394f3d19f18993a1841f2f8d"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierZ0.lean",
+      "seconds": 1.1,
+      "peak_rss_bytes": 2021048320,
+      "returncode": 0,
+      "sha256": "e227245361049d325ea9bad52970db4c8147eca667b86c7eced2a3c30f3b1085"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierX1.lean",
+      "seconds": 1.108,
+      "peak_rss_bytes": 2020704256,
+      "returncode": 0,
+      "sha256": "5d866799fdb6ed00ce7e494362bd37666c1cf27f97031960ac89ce29d9bf0f85"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierX0.lean",
+      "seconds": 1.096,
+      "peak_rss_bytes": 2020179968,
+      "returncode": 0,
+      "sha256": "d05bfd10be94dfdf4587abc9894b2ae0d837e8f38865a1fe9c4d57d1b896b906"
+    },
+    {
+      "source": "MittenDistance/M150/ClassifierParts.lean",
+      "seconds": 1.013,
+      "peak_rss_bytes": 2014052352,
+      "returncode": 0,
+      "sha256": "4c2f2821af7cd79322f3eed6caf503d337ddfd6e769882729ddb3f150da14cc5"
+    },
+    {
+      "source": "MittenDistance/M150/Data.lean",
+      "seconds": 8.347,
+      "peak_rss_bytes": 3256352768,
+      "returncode": 0,
+      "sha256": "77ff46e91b0dca84e461634134a68470c23409e647c89fe96c6b40f1ba324bac"
+    },
+    {
+      "source": "MittenDistance/M150/GroupedJoin.lean",
+      "seconds": 1.147,
+      "peak_rss_bytes": 1736589312,
+      "returncode": 0,
+      "sha256": "c643c0caf9a44435c976e50051447298be01d8010f37c404c3c99dbae5aa1d1f"
+    },
+    {
+      "source": "MittenDistance/M150/Defs.lean",
+      "seconds": 2.013,
+      "peak_rss_bytes": 3291119616,
+      "returncode": 0,
+      "sha256": "aceffc157be184ee4164817d383b9dff440edb2fa1913825a2becb1db5885710"
+    },
+    {
+      "source": "MittenDistance/M150/JoinX.lean",
+      "seconds": 11.348,
+      "peak_rss_bytes": 2728050688,
+      "returncode": 0,
+      "sha256": "a5d57f85c5afd2fdbcec5098cf601dc286c225b23c42adde2f08caacbf6133ca"
+    },
+    {
+      "source": "MittenDistance/M150/JoinZ.lean",
+      "seconds": 11.582,
+      "peak_rss_bytes": 2751873024,
+      "returncode": 0,
+      "sha256": "4806d34b372cb18424ae97e8c607d4d90c02f03efbd7b7a8d39e8a0260380655"
+    },
+    {
+      "source": "MittenDistance/M150/Sparse.lean",
+      "seconds": 6.758,
+      "peak_rss_bytes": 3415441408,
+      "returncode": 0,
+      "sha256": "e113bff67b92b76621db3f35de60b060671a36190a5738f0387ffcda39b3e436"
+    },
+    {
+      "source": "MittenDistance/M150/FloorSweepX.lean",
+      "seconds": 1.123,
+      "peak_rss_bytes": 2007613440,
+      "returncode": 0,
+      "sha256": "764c6d6bb3f021df2ebd78960ca2f0a2b81242c5c4a6cb75a3f3d27e992ef52a"
+    },
+    {
+      "source": "MittenDistance/M150/FloorSweepZ.lean",
+      "seconds": 1.055,
+      "peak_rss_bytes": 2006958080,
+      "returncode": 0,
+      "sha256": "040df4bb1c0d558523314283e59cec12abeed9fb526fd51f955f9b3690df37bf"
+    },
+    {
+      "source": "MittenDistance/M150/FloorBridge.lean",
+      "seconds": 2.365,
+      "peak_rss_bytes": 3335241728,
+      "returncode": 0,
+      "sha256": "bcf7c0a42c28ea211c7d261020b3a10570c18bb956a55b65e5c1961b4e23a62f"
+    },
+    {
+      "source": "MittenDistance/M150/SparseSupport.lean",
+      "seconds": 1.914,
+      "peak_rss_bytes": 3296313344,
+      "returncode": 0,
+      "sha256": "006ba6282796e84417a612d37d0d9cc639285f3dc5ce47c6111d44cebf36ef84"
+    },
+    {
+      "source": "MittenDistance/M150/StabilizerCode.lean",
+      "seconds": 6.609,
+      "peak_rss_bytes": 3948331008,
+      "returncode": 0,
+      "sha256": "2b938a23b7b42e0c919db415d1d774689a065dcf39384e0428c8016553a47ba3"
+    },
+    {
+      "source": "MittenDistance/M150/FloorChecksX.lean",
+      "seconds": 14.286,
+      "peak_rss_bytes": 4199415808,
+      "returncode": 0,
+      "sha256": "24944dd5c2bcb315046e5224555b4d30b471e11d074de27c6865ceffefc49381"
+    },
+    {
+      "source": "MittenDistance/M150/FloorChecksZ.lean",
+      "seconds": 15.881,
+      "peak_rss_bytes": 4216733696,
+      "returncode": 0,
+      "sha256": "9a0c952efabbef5026c581899dabe9115836a8ecf3bb3a198eaa88156e5281c9"
+    },
+    {
+      "source": "MittenDistance/M150/Witness.lean",
+      "seconds": 3.394,
+      "peak_rss_bytes": 3508207616,
+      "returncode": 0,
+      "sha256": "a67e3b161862831f4f796a9888ebc997cabe60519489c91df4c7090b07e5e5ab"
+    },
+    {
+      "source": "MittenDistance/M150/Logicals.lean",
+      "seconds": 14.961,
+      "peak_rss_bytes": 4365500416,
+      "returncode": 0,
+      "sha256": "4b9b29fd1c5cb37807724f68abff168608e1e8a736f52dc8e51f6b6457f3759c"
+    },
+    {
+      "source": "MittenDistance/M150/FloorZSide.lean",
+      "seconds": 5.489,
+      "peak_rss_bytes": 3353214976,
+      "returncode": 0,
+      "sha256": "c330c940f36466d506d87ea645fbe6cf6a1950ce4dcc83981d6f10fb9bca5a12"
+    },
+    {
+      "source": "MittenDistance/M150/FloorXSide.lean",
+      "seconds": 2.697,
+      "peak_rss_bytes": 3352805376,
+      "returncode": 0,
+      "sha256": "0fd422812e569a22d507355c7328348b29d54490d572bfccd736680f808c714f"
+    },
+    {
+      "source": "MittenDistance/M150/Distance.lean",
+      "seconds": 1.915,
+      "peak_rss_bytes": 3340304384,
+      "returncode": 0,
+      "sha256": "53054ad6690dacbe7bcf90f8622e68a80ade4e292544e1df9746d01233b4aadc"
+    },
+    {
+      "source": "MittenDistance/M150.lean",
+      "seconds": 1.538,
+      "peak_rss_bytes": 3264921600,
+      "returncode": 0,
+      "sha256": "02f62d25edc2eb23b0eb649be5cde54f7e99d49d2558273a575df6f1748203cb"
+    },
+    {
+      "source": "MittenDistance.lean",
+      "seconds": 1.52,
+      "peak_rss_bytes": 3264495616,
+      "returncode": 0,
+      "sha256": "8a1c81054fa2dc5e1379e01eb67b68e579d6a333a14300e463b954c93c37124a"
+    }
+  ]
+}
