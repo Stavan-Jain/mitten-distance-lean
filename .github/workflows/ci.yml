@@ -38,6 +38,10 @@ jobs:
     env:
       LEAN_NUM_THREADS: '1'
       LAKE_ARTIFACT_CACHE: 'false'
+      # The Linux FloorChecks and Logicals processes exceeded the 4608 MB
+      # local default. The hosted runner has 16 GB RAM; keep one Lean process
+      # and worker while giving its kernel checks an 8192 MB allocation guard.
+      MITTEN_CI_MEMORY_MB: '8192'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/cache@v4
@@ -64,11 +68,17 @@ jobs:
           use-mathlib-cache: 'true'
           use-github-cache: 'false'
       - name: Build all mitten proof modules with bounded memory
-        run: python3 scripts/build_bounded.py --root . build
+        run: >-
+          python3 scripts/build_bounded.py --root .
+          --memory-mb "$MITTEN_CI_MEMORY_MB" build
       - name: Audit proof axioms
-        run: python3 scripts/build_bounded.py --root . env lean scripts/AxiomCheck.lean
+        run: >-
+          python3 scripts/build_bounded.py --root .
+          --memory-mb "$MITTEN_CI_MEMORY_MB" env lean scripts/AxiomCheck.lean
       - name: Check public parameters and canonical packaging
-        run: python3 scripts/build_bounded.py --root . env lean scripts/PublicApi.lean
+        run: >-
+          python3 scripts/build_bounded.py --root .
+          --memory-mb "$MITTEN_CI_MEMORY_MB" env lean scripts/PublicApi.lean
       - name: Preserve per-process measurements
         if: always()
         uses: actions/upload-artifact@v4
