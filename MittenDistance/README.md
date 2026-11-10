@@ -98,9 +98,10 @@ python3 scripts/build_bounded.py --root . env lean scripts/PublicApi.lean
 
 The standard-library-only launcher serializes Lean processes and defaults
 to one worker and a 4608 MB Lean allocation guard. The guard is not a hard
-limit on resident memory. Timing and peak resident-memory measurements are
-recorded under `.lake/mitten-bounded/lean-processes.jsonl`. Avoid running
-another build or an editor-triggered Lean check alongside it.
+limit on resident memory. CI uses an 8192 MB guard on its 16 GB Linux runner
+while keeping the same one-process, one-worker limit. Timing and peak resident
+memory are recorded under `.lake/mitten-bounded/lean-processes.jsonl`. Avoid
+running another build or an editor-triggered Lean check alongside it.
 
 ## Historical validation
 

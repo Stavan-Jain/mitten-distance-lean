@@ -33,8 +33,10 @@ The launcher permits one Lean process at a time and defaults to one worker
 with a 4608 MB Lean allocation guard. The guard is not a hard resident-memory
 limit. Timings and peak resident memory are recorded in
 `.lake/mitten-bounded/lean-processes.jsonl`. Do not run another build or an
-editor-triggered Lean check alongside it. CI uses the same launcher and
-provides swap space.
+editor-triggered Lean check alongside it. CI uses the same serial launcher
+with an 8192 MB guard on its 16 GB Linux runner and provides swap space.
+The Linux floor and logical-basis checks exceeded the 4608 MB local default;
+the CI setting applies to the build, axiom audit, and public-API check.
 
 ## Public theorems
 
