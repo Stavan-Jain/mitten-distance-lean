@@ -129,14 +129,14 @@ theorem logical_commute_cross : ∀ ℓ ℓ' : Fin 30, ℓ ≠ ℓ' →
         = (logicalQubit ℓ').zOp * (logicalQubit ℓ).zOp) := by
   intro ℓ ℓ' hne
   refine ⟨?_, ?_, ?_, ?_⟩
-  · exact Quantum.StabilizerGroup.CSSCommutationLemmas.XType_commutes
-      (HomologicalCode.chainXOperator_isXType _) (HomologicalCode.chainXOperator_isXType _)
+  · exact (HomologicalCode.chainXOperator_isXType _).commute
+      (HomologicalCode.chainXOperator_isXType _)
   · exact chainXOperator_commute_chainZOperator (logXchain ℓ) (logZchain ℓ')
       (by rw [logChain_inner ℓ ℓ', if_neg hne])
   · exact (chainXOperator_commute_chainZOperator (logXchain ℓ') (logZchain ℓ)
       (by rw [logChain_inner ℓ' ℓ, if_neg (Ne.symm hne)])).symm
-  · exact Quantum.StabilizerGroup.CSSCommutationLemmas.ZType_commutes
-      (HomologicalCode.chainZOperator_isZType _) (HomologicalCode.chainZOperator_isZType _)
+  · exact (HomologicalCode.chainZOperator_isZType _).commute
+      (HomologicalCode.chainZOperator_isZType _)
 
 /-- The canonical mitten code equipped with its thirty certified logical pairs. -/
 noncomputable def m150StabilizerCodeWithLogicals : StabilizerCodeWithLogicals 150 30 where
